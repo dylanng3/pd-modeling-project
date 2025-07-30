@@ -1,4 +1,7 @@
 site_name: PD Modeling for Credit Default Risk
+site_url: https://dylanng3.github.io/pd-modeling-project/
+repo_url: https://github.com/dylanng3/pd-modeling-project
+repo_name: dylanng3/pd-modeling-project
 
 theme:
   name: material
@@ -31,7 +34,7 @@ theme:
     - content.code.copy
 
 plugins:
-  - social
+  # - social  # Tạm thời comment để tránh lỗi dependencies
   - search
 
 extra:

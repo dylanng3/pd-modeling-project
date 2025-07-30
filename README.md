@@ -8,6 +8,8 @@
 
 This project focuses on developing robust **Probability of Default (PD)** models for credit risk assessment using machine learning techniques. The project implements a comprehensive end-to-end pipeline for credit default prediction using the Home Credit dataset, featuring advanced ensemble methods, feature engineering, and model validation techniques.
 
+📚 **[Comprehensive Documentation](https://dylanng3.github.io/pd-modeling-project/)** - Visit our MkDocs website for detailed technical documentation, model architecture explanations, and interactive analysis results.
+
 ### Key Features
 
 - **Multi-level Stacking Architecture**: Three-tier ensemble combining XGBoost, LightGBM, and CatBoost

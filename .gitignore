@@ -162,7 +162,7 @@ instance/
 .scrapy
 
 # MkDocs documentation
-docs/site/
+# docs/site/ 
 
 # PyBuilder
 .pybuilder/
