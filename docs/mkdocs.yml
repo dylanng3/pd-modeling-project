@@ -1,0 +1,77 @@
+site_name: PD Modeling for Credit Default Risk
+
+theme:
+  name: material
+  language: en 
+  palette: # Đây là cách cấu hình bảng màu đúng cho nhiều chế độ sáng/tối
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: blue grey
+      accent: dark blue
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: blue grey
+      accent: dark blue
+  features: # Đảm bảo các 'features' này vẫn nằm dưới 'theme'
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tracking
+    - navigation.instant
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+plugins:
+  - social
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/dylanng3
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/dylanng3/
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+nav:
+    - Giới thiệu: 'index.md' 
+    - Xử lí dữ liệu: 'data_pipeline.md'
+    - Chuyển đổi dữ liệu: 'processing.md'
+    - Mô hình hóa: 'modeling.md'
+    - Kiểm định mô hình: 'validation_pipeline.md'
+    - Đánh giá hiệu suất: 'performance.md'
+    - Phân tích độ ổn định: 'stability.md'
+    - Phân tích Hiệu chuẩn: 'calibration.md'
+    - Vintage: 'vintage.md'
+    - Backtesting: 'backtesting.md'
+
+site_author: Duong, N.C.K
